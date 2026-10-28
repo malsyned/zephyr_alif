@@ -1,0 +1,27 @@
+/* Copyright (c) 2025 Alif Semiconductor
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+&spi4 {
+	pinctrl-0 = < &pinctrl_lpspi >;
+	pinctrl-1 = < &pinctrl_lpspi_sleep >;
+	pinctrl-names = "default", "sleep";
+};
+
+&lpuart {
+	pinctrl-0 = <&pinctrl_lpuart>;
+	pinctrl-1 = <&pinctrl_lpuart_sleep>;
+	pinctrl-names = "default", "sleep";
+};
+
+&lppdm {
+	pinctrl-0 = <&pinctrl_lppdm>;
+	pinctrl-1 = <&pinctrl_lppdm_sleep>;
+	pinctrl-names = "default", "sleep";
+};
+
+&lpcam {
+	pinctrl-0 = <&pinctrl_lpcam>;
+	pinctrl-names = "default";
+};

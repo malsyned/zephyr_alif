@@ -1,0 +1,77 @@
+/* Copyright (c) 2025 Alif Semiconductor
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+#include "e1_board_defaults.dtsi"
+
+&uart6 {
+	pinctrl-0 = <&pinctrl_uart6>;
+	pinctrl-1 = <&pinctrl_uart6_sleep>;
+	pinctrl-names = "default", "sleep";
+};
+
+&uart7 {
+	pinctrl-0 = <&pinctrl_uart7>;
+	pinctrl-1 = <&pinctrl_uart7_sleep>;
+	pinctrl-names = "default", "sleep";
+};
+
+&gpio10 {
+	pinctrl-0 = < &pinctrl_gpio10 >;
+	pinctrl-names = "default";
+};
+
+&gpio11 {
+	pinctrl-0 = < &pinctrl_gpio11 >;
+	pinctrl-names = "default";
+};
+
+&gpio12 {
+	pinctrl-0 = < &pinctrl_gpio12 >;
+	pinctrl-names = "default";
+};
+
+&gpio13 {
+	pinctrl-0 = < &pinctrl_gpio13 >;
+	pinctrl-names = "default";
+};
+
+&gpio14 {
+	pinctrl-0 = < &pinctrl_gpio14 >;
+	pinctrl-names = "default";
+};
+
+&i2c2 {
+	pinctrl-0 = <&pinctrl_i2c2>;
+	pinctrl-1 = <&pinctrl_i2c2_sleep>;
+	pinctrl-names = "default", "sleep";
+};
+
+&i2c3 {
+	pinctrl-0 = <&pinctrl_i2c3>;
+	pinctrl-1 = <&pinctrl_i2c3_sleep>;
+	pinctrl-names = "default", "sleep";
+};
+
+&i2s2 {
+	pinctrl-0 = <&pinctrl_i2s2>;
+	pinctrl-1 = <&pinctrl_i2s2_sleep>;
+	pinctrl-names = "default", "sleep";
+};
+
+&i2s3 {
+	pinctrl-0 = <&pinctrl_i2s3>;
+	pinctrl-1 = <&pinctrl_i2s3_sleep>;
+	pinctrl-names = "default", "sleep";
+};
+
+&cam {
+	pinctrl-0 = <&pinctrl_cam8>;
+	pinctrl-names = "default";
+};
+
+&ospi1 {
+	pinctrl-0 = <&pinctrl_ospi1>;
+	pinctrl-names = "default";
+};

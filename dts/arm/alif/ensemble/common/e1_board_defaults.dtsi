@@ -1,0 +1,419 @@
+/* Copyright (c) 2025 Alif Semiconductor
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+&sdhc {
+	pinctrl-0 = <&pinctrl_sdmmc>;
+	pinctrl-names = "default";
+};
+
+&uart0 {
+	pinctrl-0 = <&pinctrl_uart0>;
+	pinctrl-1 = <&pinctrl_uart0_sleep>;
+	pinctrl-names = "default", "sleep";
+};
+
+&uart1 {
+	pinctrl-0 = <&pinctrl_uart1>;
+	pinctrl-1 = <&pinctrl_uart1_sleep>;
+	pinctrl-names = "default", "sleep";
+};
+
+&uart2 {
+	pinctrl-0 = <&pinctrl_uart2>;
+	pinctrl-1 = <&pinctrl_uart2_sleep>;
+	pinctrl-names = "default", "sleep";
+};
+
+&uart3 {
+	pinctrl-0 = <&pinctrl_uart3>;
+	pinctrl-1 = <&pinctrl_uart3_sleep>;
+	pinctrl-names = "default", "sleep";
+};
+
+&uart4 {
+	pinctrl-0 = <&pinctrl_uart4>;
+	pinctrl-1 = <&pinctrl_uart4_sleep>;
+	pinctrl-names = "default", "sleep";
+};
+
+&uart5 {
+	pinctrl-0 = <&pinctrl_uart5>;
+	pinctrl-1 = <&pinctrl_uart5_sleep>;
+	pinctrl-names = "default", "sleep";
+};
+
+&spi0 {
+	pinctrl-0 = < &pinctrl_spi0 >;
+	pinctrl-1 = < &pinctrl_spi0_sleep >;
+	pinctrl-names = "default", "sleep";
+};
+
+&spi1 {
+	pinctrl-0 = < &pinctrl_spi1 >;
+	pinctrl-1 = < &pinctrl_spi1_sleep >;
+	pinctrl-names = "default", "sleep";
+};
+
+&spi2 {
+	pinctrl-0 = < &pinctrl_spi2 >;
+	pinctrl-1 = < &pinctrl_spi2_sleep >;
+	pinctrl-names = "default", "sleep";
+};
+
+&spi3 {
+	pinctrl-0 = < &pinctrl_spi3 >;
+	pinctrl-1 = < &pinctrl_spi3_sleep >;
+	pinctrl-names = "default", "sleep";
+};
+
+&utimer0 {
+	pwm0 {
+		pinctrl-0 = <&pinctrl_ut0>;
+		pinctrl-1 = <&pinctrl_ut0_sleep>;
+		pinctrl-names = "default", "sleep";
+	};
+
+	qdec {
+		pinctrl-0 = <&pinctrl_ut0>;
+		pinctrl-1 = <&pinctrl_ut0_sleep>;
+		pinctrl-names = "default", "sleep";
+	};
+};
+
+&utimer1 {
+	pwm1 {
+		pinctrl-0 = <&pinctrl_ut1>;
+		pinctrl-1 = <&pinctrl_ut1_sleep>;
+		pinctrl-names = "default", "sleep";
+	};
+
+	qdec {
+		pinctrl-0 = <&pinctrl_ut1>;
+		pinctrl-1 = <&pinctrl_ut1_sleep>;
+		pinctrl-names = "default", "sleep";
+	};
+};
+
+&utimer2 {
+	pwm2 {
+		pinctrl-0 = <&pinctrl_ut2>;
+		pinctrl-1 = <&pinctrl_ut2_sleep>;
+		pinctrl-names = "default", "sleep";
+	};
+
+	qdec {
+		pinctrl-0 = <&pinctrl_ut2>;
+		pinctrl-1 = <&pinctrl_ut2_sleep>;
+		pinctrl-names = "default", "sleep";
+	};
+};
+
+&utimer3 {
+	pwm3 {
+		pinctrl-0 = <&pinctrl_ut3>;
+		pinctrl-1 = <&pinctrl_ut3_sleep>;
+		pinctrl-names = "default", "sleep";
+	};
+
+	qdec {
+		pinctrl-0 = <&pinctrl_ut3>;
+		pinctrl-1 = <&pinctrl_ut3_sleep>;
+		pinctrl-names = "default", "sleep";
+	};
+};
+
+&utimer4 {
+	pwm4 {
+		pinctrl-0 = <&pinctrl_ut4>;
+		pinctrl-1 = <&pinctrl_ut4_sleep>;
+		pinctrl-names = "default", "sleep";
+	};
+
+	qdec {
+		pinctrl-0 = <&pinctrl_ut4>;
+		pinctrl-1 = <&pinctrl_ut4_sleep>;
+		pinctrl-names = "default", "sleep";
+	};
+};
+
+&utimer5 {
+	pwm5 {
+		pinctrl-0 = <&pinctrl_ut5>;
+		pinctrl-1 = <&pinctrl_ut5_sleep>;
+		pinctrl-names = "default", "sleep";
+	};
+
+	qdec {
+		pinctrl-0 = <&pinctrl_ut5>;
+		pinctrl-1 = <&pinctrl_ut5_sleep>;
+		pinctrl-names = "default", "sleep";
+	};
+};
+
+&utimer6 {
+	pwm6 {
+		pinctrl-0 = <&pinctrl_ut6>;
+		pinctrl-1 = <&pinctrl_ut6_sleep>;
+		pinctrl-names = "default", "sleep";
+	};
+
+	qdec {
+		pinctrl-0 = <&pinctrl_ut6>;
+		pinctrl-1 = <&pinctrl_ut6_sleep>;
+		pinctrl-names = "default", "sleep";
+	};
+};
+
+&utimer7 {
+	pwm7 {
+		pinctrl-0 = <&pinctrl_ut7>;
+		pinctrl-1 = <&pinctrl_ut7_sleep>;
+		pinctrl-names = "default", "sleep";
+	};
+
+	qdec {
+		pinctrl-0 = <&pinctrl_ut7>;
+		pinctrl-1 = <&pinctrl_ut7_sleep>;
+		pinctrl-names = "default", "sleep";
+	};
+};
+
+&utimer8 {
+	pwm8 {
+		pinctrl-0 = <&pinctrl_ut8>;
+		pinctrl-1 = <&pinctrl_ut8_sleep>;
+		pinctrl-names = "default", "sleep";
+	};
+
+	qdec {
+		pinctrl-0 = <&pinctrl_ut8>;
+		pinctrl-1 = <&pinctrl_ut8_sleep>;
+		pinctrl-names = "default", "sleep";
+	};
+};
+
+&utimer9 {
+	pwm9 {
+		pinctrl-0 = <&pinctrl_ut9>;
+		pinctrl-1 = <&pinctrl_ut9_sleep>;
+		pinctrl-names = "default", "sleep";
+	};
+
+	qdec {
+		pinctrl-0 = <&pinctrl_ut9>;
+		pinctrl-1 = <&pinctrl_ut9_sleep>;
+		pinctrl-names = "default", "sleep";
+	};
+};
+
+&utimer10 {
+	pwm10 {
+		pinctrl-0 = <&pinctrl_ut10>;
+		pinctrl-1 = <&pinctrl_ut10_sleep>;
+		pinctrl-names = "default", "sleep";
+	};
+
+	qdec {
+		pinctrl-0 = <&pinctrl_ut10>;
+		pinctrl-1 = <&pinctrl_ut10_sleep>;
+		pinctrl-names = "default", "sleep";
+	};
+};
+
+&utimer11 {
+	pwm11 {
+		pinctrl-0 = <&pinctrl_ut11>;
+		pinctrl-1 = <&pinctrl_ut11_sleep>;
+		pinctrl-names = "default", "sleep";
+	};
+
+	qdec {
+		pinctrl-0 = <&pinctrl_ut11>;
+		pinctrl-1 = <&pinctrl_ut11_sleep>;
+		pinctrl-names = "default", "sleep";
+	};
+};
+
+&dac0 {
+	pinctrl-names = "default";
+	pinctrl-0 = <&pinctrl_dac0>;
+};
+
+&dac1 {
+	pinctrl-names = "default";
+	pinctrl-0 = <&pinctrl_dac1>;
+};
+
+&gpio0 {
+	pinctrl-0 = < &pinctrl_gpio0 >;
+	pinctrl-names = "default";
+};
+
+&gpio1 {
+	pinctrl-0 = < &pinctrl_gpio1 >;
+	pinctrl-names = "default";
+};
+
+&gpio2 {
+	pinctrl-0 = < &pinctrl_gpio2 >;
+	pinctrl-names = "default";
+};
+
+&gpio3 {
+	pinctrl-0 = < &pinctrl_gpio3 >;
+	pinctrl-names = "default";
+};
+
+&gpio4 {
+	pinctrl-0 = < &pinctrl_gpio4 >;
+	pinctrl-names = "default";
+};
+
+&gpio5 {
+	pinctrl-0 = < &pinctrl_gpio5 >;
+	pinctrl-names = "default";
+};
+
+&gpio6 {
+	pinctrl-0 = < &pinctrl_gpio6 >;
+	pinctrl-names = "default";
+};
+
+&gpio7 {
+	pinctrl-0 = < &pinctrl_gpio7 >;
+	pinctrl-names = "default";
+};
+
+&gpio8 {
+	pinctrl-0 = < &pinctrl_gpio8 >;
+	pinctrl-names = "default";
+};
+
+&gpio9 {
+	pinctrl-0 = < &pinctrl_gpio9 >;
+	pinctrl-names = "default";
+};
+
+&lpgpio {
+	pinctrl-0 = < &pinctrl_lpgpio >;
+	pinctrl-names = "default";
+};
+
+&pdm {
+	pinctrl-0 = <&pinctrl_pdm0>;
+	pinctrl-1 = <&pinctrl_pdm0_sleep>;
+	pinctrl-names = "default", "sleep";
+};
+
+&adc0 {
+	pinctrl-0		= <&pinctrl_adc0>;
+	pinctrl-1		= <&pinctrl_adc0_sleep>;
+	pinctrl-names		= "default", "sleep";
+};
+
+&adc1 {
+	pinctrl-0		= <&pinctrl_adc1>;
+	pinctrl-1		= <&pinctrl_adc1_sleep>;
+	pinctrl-names		= "default", "sleep";
+};
+
+&adc2 {
+	pinctrl-0		= <&pinctrl_adc2>;
+	pinctrl-1		= <&pinctrl_adc2_sleep>;
+	pinctrl-names		= "default", "sleep";
+};
+
+&adc24 {
+	pinctrl-0		= <&pinctrl_adc24>;
+	pinctrl-1		= <&pinctrl_adc24_sleep>;
+	pinctrl-names		= "default", "sleep";
+};
+
+&cmp0 {
+	pinctrl-0	 = < &pinctrl_cmp0 >;
+	pinctrl-names	 = "default";
+};
+
+&cmp1 {
+	pinctrl-0	 = < &pinctrl_cmp1 >;
+	pinctrl-names	 = "default";
+};
+
+&cmp2 {
+	pinctrl-0	 = < &pinctrl_cmp2 >;
+	pinctrl-names	 = "default";
+};
+
+&cmp3 {
+	pinctrl-0	 = < &pinctrl_cmp3 >;
+	pinctrl-names	 = "default";
+};
+
+&lpcmp {
+	pinctrl-0	 = < &pinctrl_lpcmp >;
+	pinctrl-names	 = "default";
+};
+
+&i2c0 {
+	pinctrl-0 = <&pinctrl_i2c0>;
+	pinctrl-1 = <&pinctrl_i2c0_sleep>;
+	pinctrl-names = "default", "sleep";
+};
+
+&i2c1 {
+	pinctrl-0 = <&pinctrl_i2c1>;
+	pinctrl-1 = <&pinctrl_i2c1_sleep>;
+	pinctrl-names = "default", "sleep";
+};
+
+&lpi2c0 {
+	pinctrl-names = "default";
+	pinctrl-0 = <&pinctrl_lpi2c0>;
+};
+
+&i3c0 {
+	pinctrl-0       = <&pinctrl_i3c0>;
+	pinctrl-1       = <&pinctrl_i3c0_recovery>;
+	pinctrl-2       = <&pinctrl_i3c0_sleep>;
+	pinctrl-names   = "default", "recovery", "sleep";
+};
+
+&can0 {
+	pinctrl-0       = <&pinctrl_can0>;
+	pinctrl-names   = "default";
+};
+
+&i2s0 {
+	pinctrl-0 = <&pinctrl_i2s0>;
+	pinctrl-1 = <&pinctrl_i2s0_sleep>;
+	pinctrl-names = "default", "sleep";
+};
+
+&i2s1 {
+	pinctrl-0 = <&pinctrl_i2s1>;
+	pinctrl-1 = <&pinctrl_i2s1_sleep>;
+	pinctrl-names = "default", "sleep";
+};
+
+&i2s4 {
+	pinctrl-0 = <&pinctrl_lpi2s>;
+	pinctrl-1 = <&pinctrl_lpi2s_sleep>;
+	pinctrl-names = "default", "sleep";
+};
+
+&ospi0 {
+	pinctrl-0 = <&pinctrl_ospi0>;
+	pinctrl-names = "default";
+};
+
+&ethernet {
+	pinctrl-0 = <&pinctrl_eth>;
+	pinctrl-names = "default";
+};
+
+&cdc200 {
+	pinctrl-0 = < &pinctrl_cdc200 >;
+	pinctrl-names = "default";
+};

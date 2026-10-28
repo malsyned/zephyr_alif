@@ -1,0 +1,75 @@
+/* Copyright (c) 2025 Alif Semiconductor
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+#include "e3_e5_e7_board_defaults.dtsi"
+
+&gpio16 {
+	pinctrl-0 = < &pinctrl_gpio16 >;
+	pinctrl-names = "default";
+};
+
+&gpio17 {
+	pinctrl-0 = < &pinctrl_gpio17 >;
+	pinctrl-names = "default";
+};
+
+&lpi2c1 {
+	pinctrl-0 = <&pinctrl_lpi2c1>;
+	pinctrl-names = "default";
+};
+
+&lputimer0 {
+	pwm0 {
+		pinctrl-0 = <&pinctrl_lput0>;
+		pinctrl-1 = <&pinctrl_lput0_sleep>;
+		pinctrl-names = "default", "sleep";
+	};
+
+	qdec {
+		pinctrl-0 = <&pinctrl_lput0>;
+		pinctrl-1 = <&pinctrl_lput0_sleep>;
+		pinctrl-names = "default", "sleep";
+	};
+};
+
+&lputimer1 {
+	pwm1 {
+		pinctrl-0 = <&pinctrl_lput1>;
+		pinctrl-1 = <&pinctrl_lput1_sleep>;
+		pinctrl-names = "default", "sleep";
+	};
+
+	qdec {
+		pinctrl-0 = <&pinctrl_lput1>;
+		pinctrl-1 = <&pinctrl_lput1_sleep>;
+		pinctrl-names = "default", "sleep";
+	};
+};
+
+&lputimer2 {
+	pwm2 {
+		pinctrl-0 = <&pinctrl_lput2>;
+		pinctrl-1 = <&pinctrl_lput2_sleep>;
+		pinctrl-names = "default", "sleep";
+	};
+
+	qdec {
+		pinctrl-0 = <&pinctrl_lput2>;
+		pinctrl-1 = <&pinctrl_lput2_sleep>;
+		pinctrl-names = "default", "sleep";
+	};
+};
+
+&lpi3c0 {
+	pinctrl-0       = <&pinctrl_lpi3c0>;
+	pinctrl-1       = <&pinctrl_lpi3c0_recovery>;
+	pinctrl-2       = <&pinctrl_lpi3c0_sleep>;
+	pinctrl-names   = "default", "recovery", "sleep";
+};
+
+&lpcmp {
+	pinctrl-0	 = <&pinctrl_lpcmp>;
+	pinctrl-names	 = "default";
+};
