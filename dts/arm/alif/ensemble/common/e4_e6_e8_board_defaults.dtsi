@@ -73,3 +73,7 @@
 	pinctrl-0	 = <&pinctrl_lpcmp>;
 	pinctrl-names	 = "default";
 };
+
+&mipi_dsi {
+	cam-disp-mux-gpios = <&gpio14 2 GPIO_ACTIVE_HIGH>;
+};

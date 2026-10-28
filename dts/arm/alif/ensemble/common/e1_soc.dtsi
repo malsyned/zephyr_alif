@@ -122,10 +122,8 @@
 		max-bus-freq = <50000000U>;
 		min-bus-freq = <400000>;
 		power-delay-ms = <500>;
-		cd-gpios = <&gpio3 3 GPIO_ACTIVE_LOW>;
 		mmc {
 			compatible = "zephyr,sdmmc-disk";
-			bus-width = <4>;
 			status = "disabled";
 		};
 		status = "disabled";
@@ -1397,7 +1395,6 @@
 		negative_input	 = "CMP_NEG_IN3";
 		hysteresis_level = "42mV";
 		interrupts	 = <167 0>;
-		cmp-gpios	 = <&gpio14 7 GPIO_ACTIVE_HIGH>;
 		status = "disabled";
 	};
 
@@ -1416,7 +1413,6 @@
 		negative_input	 = "CMP_NEG_IN3";
 		hysteresis_level = "42mV";
 		interrupts	 = <168 0>;
-		cmp-gpios	 = <&gpio14 6 GPIO_ACTIVE_HIGH>;
 		status = "disabled";
 	};
 	cmp2: cmp2@49025000 {
@@ -1434,7 +1430,6 @@
 		negative_input	 = "CMP_NEG_IN3";
 		hysteresis_level = "42mV";
 		interrupts	 = <169 0>;
-		cmp-gpios	 = <&gpio14 5 GPIO_ACTIVE_HIGH>;
 		status = "disabled";
 	};
 	cmp3: cmp3@49026000 {
@@ -1452,7 +1447,6 @@
 		negative_input	 = "CMP_NEG_IN3";
 		hysteresis_level = "42mV";
 		interrupts	 = <170 0>;
-		cmp-gpios	 = <&gpio14 4 GPIO_ACTIVE_HIGH>;
 		status = "disabled";
 	};
 	lpcmp: lpcmp@1a60a03c {
@@ -1583,12 +1577,6 @@
 		interrupts = <96 ALIF_DEFAULT_IRQ_PRIORITY>;
 		aes-reg = <0x83001000 0x100>;
 		clocks = <&clockctrl ALIF_OSPI0_ACLK_CLK>;
-		bus-speed = <100000000>;
-		cs-pin = <0>;
-		ddr-drive-edge = <1>;
-		rx-ds-delay = <11>;
-		tx-fifo-threshold = <0>;
-		xip-wait-cycles = <255>;
 		xip-base-address = <0xA0000000 0x10000000>;
 		status = "disabled";
 	};
@@ -1708,7 +1696,7 @@
 		lfxo: lfxo {
 			compatible = "fixed-clock";
 			clock-frequency = <32768>;
-			status = "okay";
+			status = "disabled";
 			#clock-cells = <0>;
 		};
 

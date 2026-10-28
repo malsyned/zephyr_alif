@@ -75,3 +75,27 @@
 	pinctrl-0 = <&pinctrl_ospi1>;
 	pinctrl-names = "default";
 };
+
+&cam {
+	wait-vsync;
+};
+
+&csi {
+	csi-hsa = <5>;
+	csi-hbp = <10>;
+	csi-hsd = <280>;
+	csi-hact = <560>;
+	csi-vsa = <4>;
+	csi-vbp = <4>;
+	csi-vfp = <4>;
+	csi-vact = <560>;
+};
+
+&ospi1 {
+	bus-speed = <100000000>;
+	cs-pin = <0>;
+	ddr-drive-edge = <1>;
+	rx-ds-delay = <11>;
+	tx-fifo-threshold = <64>;
+	xip-wait-cycles = <16>;
+};

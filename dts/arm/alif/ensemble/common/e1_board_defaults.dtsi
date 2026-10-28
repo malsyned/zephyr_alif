@@ -418,6 +418,39 @@
 	pinctrl-names = "default";
 };
 
+&sdhc {
+	cd-gpios = <&gpio3 3 GPIO_ACTIVE_LOW>;
+
+	mmc {
+		bus-width = <4>;
+	};
+};
+
+&cmp0 {
+	cmp-gpios	 = <&gpio14 7 GPIO_ACTIVE_HIGH>;
+};
+
+&cmp1 {
+	cmp-gpios	 = <&gpio14 6 GPIO_ACTIVE_HIGH>;
+};
+
+&cmp2 {
+	cmp-gpios	 = <&gpio14 5 GPIO_ACTIVE_HIGH>;
+};
+
+&cmp3 {
+	cmp-gpios	 = <&gpio14 4 GPIO_ACTIVE_HIGH>;
+};
+
+&ospi0 {
+	bus-speed = <100000000>;
+	cs-pin = <0>;
+	ddr-drive-edge = <1>;
+	rx-ds-delay = <11>;
+	tx-fifo-threshold = <0>;
+	xip-wait-cycles = <255>;
+};
+
 &cdc200 {
 	status = "okay";
 
@@ -480,6 +513,10 @@
 		pixel-format = <MIPI_DSI_PIXFMT_RGB888>;
 		status = "okay";
 	};
+};
+
+&lfxo {
+	status = "okay";
 };
 
 / {
